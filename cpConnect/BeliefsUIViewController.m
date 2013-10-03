@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     //NSError *error;
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"beliefs" ofType:@"html"];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"beliefs2" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [_webView loadHTMLString:htmlString baseURL:nil];
     

@@ -28,13 +28,10 @@
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"giving" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [_webView loadHTMLString:htmlString baseURL:nil];
-    //NEW CODE 10-2-2013
+    //END NEW CODE 10-2-2013
     
     [super viewDidLoad];
     
-    //NSURL *url = [NSURL URLWithString:@"http://www.centerpointmeridian.com/giving/"];
-    //NSURLRequest *requestURL = [NSURLRequest requestWithURL:url];
-    //[_webView loadRequest:requestURL];
 }
 
 
