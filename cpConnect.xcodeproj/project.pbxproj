@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35381CD817FDD18700A9BCE3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35381CD717FDD18700A9BCE3 /* Parse.framework */; };
+		35381CDB17FDD1A700A9BCE3 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35381CDA17FDD1A700A9BCE3 /* Parse.framework */; };
 		3540FE2D17EA58C1002C84AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3540FE2C17EA58C1002C84AC /* Foundation.framework */; };
 		3540FE2F17EA58C1002C84AC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3540FE2E17EA58C1002C84AC /* CoreGraphics.framework */; };
 		3540FE3117EA58C1002C84AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3540FE3017EA58C1002C84AC /* UIKit.framework */; };
@@ -65,12 +67,12 @@
 		35A0893B17F916C000430BE0 /* Default_5@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893917F916C000430BE0 /* Default_5@2X.png */; };
 		EAEF5F8417FCEBFE0077C160 /* 4A_1136.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8217FCEBFE0077C160 /* 4A_1136.png */; };
 		EAEF5F8517FCEBFE0077C160 /* 4B_960.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8317FCEBFE0077C160 /* 4B_960.png */; };
-		EAEF5F8717FCECA90077C160 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEF5F8617FCECA90077C160 /* Parse.framework */; };
-		EAEF5F8817FCEDBD0077C160 /* Parse.framework in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8617FCECA90077C160 /* Parse.framework */; };
 		EAEF5F8A17FD120E0077C160 /* giving.html in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8917FD120E0077C160 /* giving.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35381CD717FDD18700A9BCE3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		35381CDA17FDD1A700A9BCE3 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		3540FE2917EA58C1002C84AC /* cpConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cpConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3540FE2C17EA58C1002C84AC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3540FE2E17EA58C1002C84AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,7 +150,6 @@
 		35A0893917F916C000430BE0 /* Default_5@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_5@2X.png"; sourceTree = "<group>"; };
 		EAEF5F8217FCEBFE0077C160 /* 4A_1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4A_1136.png; sourceTree = "<group>"; };
 		EAEF5F8317FCEBFE0077C160 /* 4B_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4B_960.png; sourceTree = "<group>"; };
-		EAEF5F8617FCECA90077C160 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		EAEF5F8917FD120E0077C160 /* giving.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = giving.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,7 +164,8 @@
 				3540FEA417EBEE28002C84AC /* CFNetwork.framework in Frameworks */,
 				3540FEA517EBEE28002C84AC /* CoreLocation.framework in Frameworks */,
 				3540FEA617EBEE28002C84AC /* libz.1.1.3.dylib in Frameworks */,
-				EAEF5F8717FCECA90077C160 /* Parse.framework in Frameworks */,
+				35381CDB17FDD1A700A9BCE3 /* Parse.framework in Frameworks */,
+				35381CD817FDD18700A9BCE3 /* Parse.framework in Frameworks */,
 				3540FEA717EBEE28002C84AC /* MobileCoreServices.framework in Frameworks */,
 				3540FEA817EBEE28002C84AC /* QuartzCore.framework in Frameworks */,
 				3540FEA917EBEE28002C84AC /* Security.framework in Frameworks */,
@@ -200,7 +202,7 @@
 		3540FE2B17EA58C1002C84AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EAEF5F8617FCECA90077C160 /* Parse.framework */,
+				35381CD717FDD18700A9BCE3 /* Parse.framework */,
 				35A0892D17F8F27D00430BE0 /* MediaPlayer.framework */,
 				35A0892B17F8F27300430BE0 /* CoreMedia.framework */,
 				35A0891517F6285200430BE0 /* MessageUI.framework */,
@@ -253,6 +255,7 @@
 				35A0892817F8F25000430BE0 /* MVViewController.h */,
 				35A0892917F8F25000430BE0 /* MVViewController.m */,
 				3540FE4417EA58C1002C84AC /* Images.xcassets */,
+				35381CDA17FDD1A700A9BCE3 /* Parse.framework */,
 				3540FE3317EA58C1002C84AC /* Supporting Files */,
 			);
 			path = cpConnect;
@@ -378,7 +381,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAEF5F8817FCEDBD0077C160 /* Parse.framework in Resources */,
 				355844B117F9C3E400CCCBF5 /* iPhoneIcon_Medium_80.png in Resources */,
 				35A0893617F9156700430BE0 /* Default_@2X.png in Resources */,
 				355844B017F9C3E400CCCBF5 /* iPhoneIcon_Big_120.png in Resources */,
@@ -557,6 +559,8 @@
 					"$(inherited)",
 					/Users/danielwwright/Documents/cpConnect,
 					/Users/danielwwright/Downloads,
+					/Users/danielwright/Documents/XCode/cpConnect/cpConnect,
+					/Users/danielwright/Documents/XCode/cpConnect/cpConnect/cpConnect,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cpConnect/cpConnect-Prefix.pch";
@@ -582,6 +586,8 @@
 					"$(inherited)",
 					/Users/danielwwright/Documents/cpConnect,
 					/Users/danielwwright/Downloads,
+					/Users/danielwright/Documents/XCode/cpConnect/cpConnect,
+					/Users/danielwright/Documents/XCode/cpConnect/cpConnect/cpConnect,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cpConnect/cpConnect-Prefix.pch";
