@@ -67,6 +67,7 @@
 		EAEF5F8517FCEBFE0077C160 /* 4B_960.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8317FCEBFE0077C160 /* 4B_960.png */; };
 		EAEF5F8717FCECA90077C160 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEF5F8617FCECA90077C160 /* Parse.framework */; };
 		EAEF5F8817FCEDBD0077C160 /* Parse.framework in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8617FCECA90077C160 /* Parse.framework */; };
+		EAEF5F8A17FD120E0077C160 /* giving.html in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8917FD120E0077C160 /* giving.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +149,7 @@
 		EAEF5F8217FCEBFE0077C160 /* 4A_1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4A_1136.png; sourceTree = "<group>"; };
 		EAEF5F8317FCEBFE0077C160 /* 4B_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4B_960.png; sourceTree = "<group>"; };
 		EAEF5F8617FCECA90077C160 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EAEF5F8917FD120E0077C160 /* giving.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = giving.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,29 +226,30 @@
 			isa = PBXGroup;
 			children = (
 				35A088F617F3457E00430BE0 /* images */,
+				3540FE3E17EA58C1002C84AC /* Main.storyboard */,
 				35A088F717F3468100430BE0 /* AboutTableViewController.h */,
 				35A088F817F3468100430BE0 /* AboutTableViewController.m */,
-				35A088DD17F285E300430BE0 /* beliefs.html */,
-				35A088EC17F33D4900430BE0 /* values.html */,
-				35A0890F17F5092C00430BE0 /* EventsUIViewController.h */,
-				35A0891017F5092C00430BE0 /* EventsUIViewController.m */,
-				3540FE6417EA7EFC002C84AC /* GivingUIViewController.h */,
-				3540FE6517EA7EFC002C84AC /* GivingUIViewController.m */,
-				3540FE3B17EA58C1002C84AC /* cpcAppDelegate.h */,
-				3540FE3C17EA58C1002C84AC /* cpcAppDelegate.m */,
-				3540FE3E17EA58C1002C84AC /* Main.storyboard */,
-				35A0891717F62FC100430BE0 /* EmailViewController.h */,
-				35A0891817F62FC100430BE0 /* EmailViewController.m */,
 				35A088DF17F2865100430BE0 /* BeliefsUIViewController.h */,
 				35A088E017F2865100430BE0 /* BeliefsUIViewController.m */,
-				35A088E217F2865F00430BE0 /* ValuesUIViewController.h */,
-				35A088E317F2865F00430BE0 /* ValuesUIViewController.m */,
+				3540FE3B17EA58C1002C84AC /* cpcAppDelegate.h */,
+				3540FE3C17EA58C1002C84AC /* cpcAppDelegate.m */,
 				3540FEAF17EBF9CC002C84AC /* cpcPCastViewController.h */,
 				3540FEB017EBF9CC002C84AC /* cpcPCastViewController.m */,
 				35A088D617F253B400430BE0 /* cpcCastDetailViewController.h */,
 				35A088D717F253B400430BE0 /* cpcCastDetailViewController.m */,
 				3540FE4117EA58C1002C84AC /* cpcViewController.h */,
 				3540FE4217EA58C1002C84AC /* cpcViewController.m */,
+				35A0891717F62FC100430BE0 /* EmailViewController.h */,
+				35A0891817F62FC100430BE0 /* EmailViewController.m */,
+				35A0890F17F5092C00430BE0 /* EventsUIViewController.h */,
+				35A0891017F5092C00430BE0 /* EventsUIViewController.m */,
+				3540FE6417EA7EFC002C84AC /* GivingUIViewController.h */,
+				3540FE6517EA7EFC002C84AC /* GivingUIViewController.m */,
+				35A088E217F2865F00430BE0 /* ValuesUIViewController.h */,
+				35A088E317F2865F00430BE0 /* ValuesUIViewController.m */,
+				35A088DD17F285E300430BE0 /* beliefs.html */,
+				35A088EC17F33D4900430BE0 /* values.html */,
+				EAEF5F8917FD120E0077C160 /* giving.html */,
 				35A0892817F8F25000430BE0 /* MVViewController.h */,
 				35A0892917F8F25000430BE0 /* MVViewController.m */,
 				3540FE4417EA58C1002C84AC /* Images.xcassets */,
@@ -392,6 +395,7 @@
 				35A0890117F4BA5600430BE0 /* play.png in Resources */,
 				35A0890017F4BA5600430BE0 /* pause.png in Resources */,
 				3540FE3717EA58C1002C84AC /* InfoPlist.strings in Resources */,
+				EAEF5F8A17FD120E0077C160 /* giving.html in Resources */,
 				35A088DE17F285E300430BE0 /* beliefs.html in Resources */,
 				35A088EF17F3425000430BE0 /* table_background.jpg in Resources */,
 				EAEF5F8517FCEBFE0077C160 /* 4B_960.png in Resources */,

@@ -19,10 +19,16 @@
 
 - (void)viewDidLoad
 {
-    NSString *fullURL = @"http://www.centerpointmeridian.com/giving/";
-    NSURL *url = [NSURL URLWithString:fullURL];
-    NSURLRequest *Request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
-    [_webView loadRequest:Request];
+    //NSString *fullURL = @"http://www.centerpointmeridian.com/giving/";
+    //NSURL *url = [NSURL URLWithString:fullURL];
+    //NSURLRequest *Request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    //[_webView loadRequest:Request];
+    
+    //NEW CODE 10-2-2013
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"giving" ofType:@"html"];
+    NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
+    [_webView loadHTMLString:htmlString baseURL:nil];
+    //NEW CODE 10-2-2013
     
     [super viewDidLoad];
     
