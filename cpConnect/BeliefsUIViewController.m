@@ -25,13 +25,6 @@
 
 - (void)viewDidLoad
 {
-    //NSString *pathToBundle = [[NSBundle mainBundle] bundlePath];
-    //NSURL *baseURL = [NSURL fileURLWithPath:pathToBundle];
-    //NSString *pathToFile = [[NSBundle mainBundle] pathForResource:@"beliefs" ofType:@"html"];
-    //NSString *htmlFileToDisplay = [[[NSString alloc]initWithContentsOfFile:pathToFile encoding:NSUTF8StringEncoding error:&error];
-    
-    //[_webView loadHTMLString:pathToFile baseURL:baseURL];
-    
     //NSError *error;
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"beliefs" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];

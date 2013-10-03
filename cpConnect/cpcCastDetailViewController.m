@@ -24,8 +24,6 @@
 
 @synthesize file;
 @synthesize detailImage;
-//@synthesize myProgressView;
-//@synthesize lblMsgTitle;
 @synthesize msgTitle;
 @synthesize lblDate;
 @synthesize msgDate;
@@ -35,11 +33,8 @@
 //NEW 9-29-13
 @synthesize songName;
 @synthesize durationOutlet;
-//@synthesize sliderVolumeOutlet;
 @synthesize sliderOutlet;
 @synthesize togglePlayPause;
-
-//@synthesize streamPlayer = _streamPlayer;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

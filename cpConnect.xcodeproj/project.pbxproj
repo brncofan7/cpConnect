@@ -31,7 +31,6 @@
 		355844B017F9C3E400CCCBF5 /* iPhoneIcon_Big_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 355844AD17F9C3E400CCCBF5 /* iPhoneIcon_Big_120.png */; };
 		355844B117F9C3E400CCCBF5 /* iPhoneIcon_Medium_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 355844AE17F9C3E400CCCBF5 /* iPhoneIcon_Medium_80.png */; };
 		355844B217F9C3E400CCCBF5 /* iPhoneIcon_Small_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 355844AF17F9C3E400CCCBF5 /* iPhoneIcon_Small_58.png */; };
-		35A088D117F0FB9D00430BE0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A088D017F0FB9D00430BE0 /* Parse.framework */; };
 		35A088D817F253B400430BE0 /* cpcCastDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A088D717F253B400430BE0 /* cpcCastDetailViewController.m */; };
 		35A088DE17F285E300430BE0 /* beliefs.html in Resources */ = {isa = PBXBuildFile; fileRef = 35A088DD17F285E300430BE0 /* beliefs.html */; };
 		35A088E117F2865100430BE0 /* BeliefsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A088E017F2865100430BE0 /* BeliefsUIViewController.m */; };
@@ -64,6 +63,10 @@
 		35A0893717F9156700430BE0 /* Default-568h_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893517F9156700430BE0 /* Default-568h_@2X.png */; };
 		35A0893A17F916C000430BE0 /* Default_4@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893817F916C000430BE0 /* Default_4@2X.png */; };
 		35A0893B17F916C000430BE0 /* Default_5@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893917F916C000430BE0 /* Default_5@2X.png */; };
+		EAEF5F8417FCEBFE0077C160 /* 4A_1136.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8217FCEBFE0077C160 /* 4A_1136.png */; };
+		EAEF5F8517FCEBFE0077C160 /* 4B_960.png in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8317FCEBFE0077C160 /* 4B_960.png */; };
+		EAEF5F8717FCECA90077C160 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEF5F8617FCECA90077C160 /* Parse.framework */; };
+		EAEF5F8817FCEDBD0077C160 /* Parse.framework in Resources */ = {isa = PBXBuildFile; fileRef = EAEF5F8617FCECA90077C160 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,7 +106,6 @@
 		355844AD17F9C3E400CCCBF5 /* iPhoneIcon_Big_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Big_120.png; sourceTree = "<group>"; };
 		355844AE17F9C3E400CCCBF5 /* iPhoneIcon_Medium_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Medium_80.png; sourceTree = "<group>"; };
 		355844AF17F9C3E400CCCBF5 /* iPhoneIcon_Small_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Small_58.png; sourceTree = "<group>"; };
-		35A088D017F0FB9D00430BE0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		35A088D617F253B400430BE0 /* cpcCastDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpcCastDetailViewController.h; sourceTree = "<group>"; };
 		35A088D717F253B400430BE0 /* cpcCastDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cpcCastDetailViewController.m; sourceTree = "<group>"; };
 		35A088DD17F285E300430BE0 /* beliefs.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = beliefs.html; sourceTree = "<group>"; };
@@ -143,6 +145,9 @@
 		35A0893517F9156700430BE0 /* Default-568h_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h_@2X.png"; sourceTree = "<group>"; };
 		35A0893817F916C000430BE0 /* Default_4@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_4@2X.png"; sourceTree = "<group>"; };
 		35A0893917F916C000430BE0 /* Default_5@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_5@2X.png"; sourceTree = "<group>"; };
+		EAEF5F8217FCEBFE0077C160 /* 4A_1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4A_1136.png; sourceTree = "<group>"; };
+		EAEF5F8317FCEBFE0077C160 /* 4B_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4B_960.png; sourceTree = "<group>"; };
+		EAEF5F8617FCECA90077C160 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,13 +161,13 @@
 				3540FEA417EBEE28002C84AC /* CFNetwork.framework in Frameworks */,
 				3540FEA517EBEE28002C84AC /* CoreLocation.framework in Frameworks */,
 				3540FEA617EBEE28002C84AC /* libz.1.1.3.dylib in Frameworks */,
+				EAEF5F8717FCECA90077C160 /* Parse.framework in Frameworks */,
 				3540FEA717EBEE28002C84AC /* MobileCoreServices.framework in Frameworks */,
 				3540FEA817EBEE28002C84AC /* QuartzCore.framework in Frameworks */,
 				3540FEA917EBEE28002C84AC /* Security.framework in Frameworks */,
 				3540FEAB17EBEE28002C84AC /* SystemConfiguration.framework in Frameworks */,
 				3540FE2F17EA58C1002C84AC /* CoreGraphics.framework in Frameworks */,
 				3540FE9B17EBEDF0002C84AC /* AudioToolbox.framework in Frameworks */,
-				35A088D117F0FB9D00430BE0 /* Parse.framework in Frameworks */,
 				3540FE9717EAA296002C84AC /* AVFoundation.framework in Frameworks */,
 				3540FE3117EA58C1002C84AC /* UIKit.framework in Frameworks */,
 				3540FE2D17EA58C1002C84AC /* Foundation.framework in Frameworks */,
@@ -193,10 +198,10 @@
 		3540FE2B17EA58C1002C84AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAEF5F8617FCECA90077C160 /* Parse.framework */,
 				35A0892D17F8F27D00430BE0 /* MediaPlayer.framework */,
 				35A0892B17F8F27300430BE0 /* CoreMedia.framework */,
 				35A0891517F6285200430BE0 /* MessageUI.framework */,
-				35A088D017F0FB9D00430BE0 /* Parse.framework */,
 				3540FE9C17EBEE27002C84AC /* CFNetwork.framework */,
 				3540FE9D17EBEE28002C84AC /* CoreLocation.framework */,
 				3540FE9E17EBEE28002C84AC /* libz.1.1.3.dylib */,
@@ -289,6 +294,8 @@
 		35A088F617F3457E00430BE0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				EAEF5F8217FCEBFE0077C160 /* 4A_1136.png */,
+				EAEF5F8317FCEBFE0077C160 /* 4B_960.png */,
 				355844AD17F9C3E400CCCBF5 /* iPhoneIcon_Big_120.png */,
 				355844AE17F9C3E400CCCBF5 /* iPhoneIcon_Medium_80.png */,
 				355844AF17F9C3E400CCCBF5 /* iPhoneIcon_Small_58.png */,
@@ -368,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEF5F8817FCEDBD0077C160 /* Parse.framework in Resources */,
 				355844B117F9C3E400CCCBF5 /* iPhoneIcon_Medium_80.png in Resources */,
 				35A0893617F9156700430BE0 /* Default_@2X.png in Resources */,
 				355844B017F9C3E400CCCBF5 /* iPhoneIcon_Big_120.png in Resources */,
@@ -386,9 +394,11 @@
 				3540FE3717EA58C1002C84AC /* InfoPlist.strings in Resources */,
 				35A088DE17F285E300430BE0 /* beliefs.html in Resources */,
 				35A088EF17F3425000430BE0 /* table_background.jpg in Resources */,
+				EAEF5F8517FCEBFE0077C160 /* 4B_960.png in Resources */,
 				35A0892217F8F1D700430BE0 /* pause_button@2x.png in Resources */,
 				35A0892617F8F1D700430BE0 /* Default@2x.png in Resources */,
 				35A088ED17F33D4900430BE0 /* values.html in Resources */,
+				EAEF5F8417FCEBFE0077C160 /* 4A_1136.png in Resources */,
 				35A0892417F8F1D700430BE0 /* play_button@2x.png in Resources */,
 				35A0892317F8F1D700430BE0 /* play_button.png in Resources */,
 				35A0892117F8F1D700430BE0 /* pause_button.png in Resources */,
@@ -536,12 +546,13 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/danielwright/Downloads,
+					/Users/danielwwright/Documents/cpConnect,
+					/Users/danielwwright/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cpConnect/cpConnect-Prefix.pch";
@@ -560,12 +571,13 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/danielwright/Downloads,
+					/Users/danielwwright/Documents/cpConnect,
+					/Users/danielwwright/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "cpConnect/cpConnect-Prefix.pch";
