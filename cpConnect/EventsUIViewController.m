@@ -9,10 +9,12 @@
 #import "EventsUIViewController.h"
 
 @interface EventsUIViewController ()
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
 @implementation EventsUIViewController
+@synthesize  activityIndicator;
 
 - (void)viewDidLoad
 {
@@ -20,19 +22,27 @@
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *Request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     [_webView loadRequest:Request];
-        
+    
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    //activityIndicator.color = [UIColor  blueColor];
+    activityIndicator.color = [UIColor colorWithRed: 0.0/255.0f green:102.0/255.0f blue:204.0/255.0f alpha:1.0];
+    UIBarButtonItem * barButton = [[UIBarButtonItem alloc] initWithCustomView:activityIndicator];
+    [self navigationItem].rightBarButtonItem = barButton;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    [_aIndicator startAnimating];
+    [activityIndicator startAnimating];
+    //[_aIndicator startAnimating];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [_aIndicator stopAnimating];
+    [activityIndicator stopAnimating];
+    //[_aIndicator stopAnimating];
     
 }
 
@@ -46,6 +56,7 @@
 {
     [super viewWillDisappear:animated];
     
+    [activityIndicator removeFromSuperview];
     [_webView removeFromSuperview];
     _webView.delegate = nil; _webView = nil;
     //[self.webView loadHTMLString:@"<html></html>" baseURL:nil];

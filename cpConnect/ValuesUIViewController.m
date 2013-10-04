@@ -9,10 +9,12 @@
 #import "ValuesUIViewController.h"
 
 @interface ValuesUIViewController ()
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
 @implementation ValuesUIViewController
+@synthesize  activityIndicator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +31,13 @@
     NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"values" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [_webView loadHTMLString:htmlString baseURL:nil];
+    
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    //activityIndicator.color = [UIColor  blueColor];
+    activityIndicator.color = [UIColor colorWithRed: 0.0/255.0f green:102.0/255.0f blue:204.0/255.0f alpha:1.0];
+    UIBarButtonItem * barButton = [[UIBarButtonItem alloc] initWithCustomView:activityIndicator];
+    [self navigationItem].rightBarButtonItem = barButton;
+    
     [super viewDidLoad];
 	
 }
@@ -36,13 +45,14 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    [_aIndicatorValues startAnimating];
+    [activityIndicator startAnimating];
+    //[_aIndicatorValues startAnimating];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [_aIndicatorValues stopAnimating];
-    
+    [activityIndicator stopAnimating];
+    //[_aIndicatorValues stopAnimating];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,6 +65,7 @@
 {
     [super viewWillDisappear:animated];
     
+    [activityIndicator removeFromSuperview];
     [_webView removeFromSuperview];
     _webView.delegate = nil; _webView = nil;
     //[self.webView loadHTMLString:@"<html></html>" baseURL:nil];

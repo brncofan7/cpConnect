@@ -363,8 +363,8 @@
                                     <outlet property="delegate" destination="Lc6-ox-kmk" id="4lP-Sc-aa5"/>
                                 </connections>
                             </webView>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="aIndicator" hidesWhenStopped="YES" style="whiteLarge" id="hLV-LG-DKh">
-                                <rect key="frame" x="142" y="149" width="37" height="37"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="aIndicator" hidesWhenStopped="YES" style="whiteLarge" id="XZb-Br-YCS">
+                                <rect key="frame" x="263" y="77" width="37" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="color" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
@@ -373,13 +373,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Giving" id="E3p-OW-Ad5"/>
                     <connections>
-                        <outlet property="aIndicator" destination="hLV-LG-DKh" id="Pd2-zn-NB6"/>
+                        <outlet property="aIndicator" destination="XZb-Br-YCS" id="Rzl-ju-cSr"/>
                         <outlet property="webView" destination="Ajg-WJ-0NE" id="tk0-0K-tgf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHM-wo-gYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1319" y="-249"/>
+            <point key="canvasLocation" x="1373" y="-231"/>
         </scene>
         <!--About Table View Controller - About CPC-->
         <scene sceneID="fAO-jX-8rb">
