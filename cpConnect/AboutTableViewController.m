@@ -27,6 +27,7 @@
 {
     // Assign our own backgroud for the view
     self.tableView.backgroundColor = [UIColor whiteColor];
+    //self.tableView.backgroundColor = [UIColor colorWithRed: 156.0/255.0f green:189.0/255.0f blue:227.0/255.0f alpha:1.0];
     
     
     [super viewDidLoad];
