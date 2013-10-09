@@ -47,6 +47,7 @@
 
 - (void) retrieveFromParse {
     PFQuery *retrieveData = [PFQuery queryWithClassName:@"tablePodcastData"];
+    [retrieveData orderByDescending:@"MsgDate"];
     [retrieveData findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             pCastArray = [[NSArray alloc] initWithArray:objects];
