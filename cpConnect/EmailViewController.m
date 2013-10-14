@@ -26,8 +26,24 @@
 
 - (void)viewDidLoad
 {
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        // Load resources for iOS 6.1 or earlier
+    } else {
+        self.tableView.backgroundColor = [UIColor whiteColor];
+    }
     
-    self.tableView.backgroundColor = [UIColor whiteColor];
+    NSArray *ver = [[UIDevice currentDevice].systemVersion componentsSeparatedByString:@"."];
+    if ([[ver objectAtIndex:0] intValue] >= 7) {
+        self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:107.0/255.0 green:164.0/255.0 blue:217.0/255.0 alpha:1];
+        self.navigationController.navigationBar.translucent = YES;
+        NSDictionary *textAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                        [UIColor whiteColor],NSForegroundColorAttributeName,
+                                        [UIColor grayColor],NSBackgroundColorAttributeName,nil];
+        
+        self.navigationController.navigationBar.titleTextAttributes = textAttributes;
+    } else {
+        self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:19.0/255.0 green:86.0/255.0 blue:138.0/255.0 alpha:1];
+    }
     
     [super viewDidLoad];
 
