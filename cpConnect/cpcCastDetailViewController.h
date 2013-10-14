@@ -13,10 +13,6 @@
 
 @interface cpcCastDetailViewController : UIViewController
 
-//@property (weak, nonatomic) IBOutlet UIProgressView *myProgressView;
-//@property (weak, nonatomic) IBOutlet UISlider *sliderVolumeOutlet;
-//@property (weak, nonatomic) IBOutlet UIBarButtonItem *stopButton;
-
 //Changed from retain to strong 9-29-13
 @property (nonatomic, strong) PFFile *file;
 
@@ -43,9 +39,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *durationOutlet;
 @property (weak, nonatomic) IBOutlet UISlider *sliderOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *togglePlayPause;
-
-//- (IBAction)sliderVolumeAction:(id)sender;
-//- (IBAction)stopButton:(id)sender;
-//- (IBAction)playButton:(id)sender;
 
 @end

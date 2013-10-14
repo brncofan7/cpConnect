@@ -47,48 +47,29 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    //lblMsgTitle.text = msgTitle;
     lblDate.text = msgDate;
     lblSpeaker.text = msgSpeaker;
     
     //NEW CODE 9-29-13
     songName.text = msgTitle;
-
+    
     //NSLog(@"%@",file);
-
+    
     NSURL *url = [NSURL URLWithString:file];
     
     player = [[AVPlayer alloc] initWithURL:url];
-    //[player setVolume:self.sliderVolumeOutlet.value];
-    //[NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(updatemyProgress:) userInfo:Nil repeats:YES];
-    
-    //NEW CODE 9-29-13
-    //AVPlayerItem * currentItem = [AVPlayerItem playerItemWithURL:url];
-    //[self.sliderOutlet setMaximumValue:self->player.currentItem.duration.value/self->player.currentItem.duration.timescale];
     //6
     self.sliderOutlet.maximumValue = 0;
     [self configurePlayer];
-}
-
-//- (void)syncUI {
-//    if ((self->player.currentItem != nil) &&
-//        ([self->player.currentItem status] == AVPlayerItemStatusReadyToPlay)) {
-//        playButton.enabled = YES;
-//    }
-//    else {
-//        playButton.enabled = NO;
-//    }
-//}
-
-//- (void)updatemyProgress:(NSTimer *)timer
-//{
     
-    //float progress = player.currentTime.value/player.currentItem.asset.duration.value;
-    //self.myProgressView.progress = [player.currentTime.value];
-    //self.myProgressView.progress = progress;
-    //self.myProgressView.progress = [player.currentTime.value]/[player.currentItem.duration.value];
-//}
+    // NEW CODE 10-14-2013
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [[AVAudioSession sharedInstance] setActive: YES error: nil];
+    //AVAudioSession *session = [AVAudioSession sharedInstance];
+    //[session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
+    [super viewDidLoad];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -96,40 +77,48 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [self->player pause];
-    player = nil;
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    //Once the view has loaded then we can register to begin recieving controls and we can become the first responder
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    [self becomeFirstResponder];
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    //End recieving events
+    [[UIApplication sharedApplication] endReceivingRemoteControlEvents];
+    [self resignFirstResponder];
 }
 
-//- (IBAction)sliderVolumeAction:(id)sender {
-    //UISlider *mySlider = sender;
-    //[avPlayer setVolume:mySlider.value];
-//    [player setVolume:self.sliderVolumeOutlet.value];
+//- (void)viewWillDisappear:(BOOL)animated
+//{
+    //[self->player pause];
+    //player = nil;
 //}
 
-//- (IBAction)stopButton:(id)sender {
-    //[avPlayer stop];
-    //[avPlayer setCurrentTime:0];
-//}
-
-
-//- (IBAction)playButton:(id)sender {
-    //[avPlayer play];
-    //[player play];
-//    if (player.rate == 1.0) {
-        //[sender setImage:[UIImage imageNamed:@"play.png"] forState:UIControlStateNormal];
-        //[self.streamPlayer pause];
-//        [sender setImage:[UIImage imageNamed:@"play2_32.png"]];
-//        [player pause];
-//    } else {
-        //[sender setImage:[UIImage imageNamed:@"pause.png"] forState:UIControlStateNormal];
-        //[self.streamPlayer play];
-//        [sender setImage:[UIImage imageNamed:@"pause2_32.png"]];
-//        [player play];
-//    }
-//}
-
+//Make sure we can recieve remote control events
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event {
+    //if it is a remote control event handle it correctly
+    if (event.type == UIEventTypeRemoteControl) {
+        if (event.subtype == UIEventSubtypeRemoteControlPlay) {
+            [self->player play];
+        } else if (event.subtype == UIEventSubtypeRemoteControlPause) {
+            [self->player pause];
+        } else if (event.subtype == UIEventSubtypeRemoteControlTogglePlayPause) {
+            //[self togglePlayPause];
+            if(self.togglePlayPause.selected) {
+                [self->player pause];
+                [self.togglePlayPause setSelected:NO];
+            } else {
+                [self->player play];
+                [self.togglePlayPause setSelected:YES];
+            }
+        }
+    }
+}
 
 //NEW CODE 9-29-13
 - (IBAction)togglePlayPauseTapped:(id)sender {
@@ -142,11 +131,13 @@
     }
     
 }
+
 - (IBAction)sliderDragged:(id)sender {
     [self->player seekToTime:CMTimeMakeWithSeconds((int)(self.sliderOutlet.value) , 1)];
 }
 
 -(void) configurePlayer {
+    
     //7
     __block cpcCastDetailViewController * weakSelf = self;
     //8
