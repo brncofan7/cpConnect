@@ -58,6 +58,10 @@
     NSURL *url = [NSURL URLWithString:file];
     
     player = [[AVPlayer alloc] initWithURL:url];
+    NSArray *keys = [NSArray arrayWithObjects:MPMediaItemPropertyAlbumTitle, MPMediaItemPropertyArtist, MPMediaItemPropertyTitle, nil];
+    NSArray *values = [NSArray arrayWithObjects:@"Center Point Church", msgSpeaker, msgTitle, nil];
+    NSDictionary *mediaInfo = [NSDictionary dictionaryWithObjects:values forKeys:keys];
+    [[MPNowPlayingInfoCenter defaultCenter] setNowPlayingInfo:mediaInfo];
     //6
     self.sliderOutlet.maximumValue = 0;
     [self configurePlayer];
@@ -65,8 +69,6 @@
     // NEW CODE 10-14-2013
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
     [[AVAudioSession sharedInstance] setActive: YES error: nil];
-    //AVAudioSession *session = [AVAudioSession sharedInstance];
-    //[session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     [super viewDidLoad];
 }
