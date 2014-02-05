@@ -28,7 +28,7 @@
 - (void)viewDidLoad
 {
     
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"values" ofType:@"html"];
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"values3" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [_webView loadHTMLString:htmlString baseURL:nil];
     

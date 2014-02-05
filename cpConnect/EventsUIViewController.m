@@ -18,10 +18,17 @@
 
 - (void)viewDidLoad
 {
-    NSString *fullURL = @"http://www.centerpointmeridian.com/calendar/";
-    NSURL *url = [NSURL URLWithString:fullURL];
-    NSURLRequest *Request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
-    [_webView loadRequest:Request];
+    //NSString *fullURL = @"http://www.centerpointmeridian.com/calendar/";
+    //NSURL *url = [NSURL URLWithString:fullURL];
+    //NSURLRequest *Request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    //[_webView loadRequest:Request];
+    
+    //NEW CODE 2-4-2014
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"events" ofType:@"html"];
+    NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
+    [_webView loadHTMLString:htmlString baseURL:nil];
+    //END NEW CODE 2-4-2014
+    
     
     activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     activityIndicator.color = [UIColor whiteColor];
