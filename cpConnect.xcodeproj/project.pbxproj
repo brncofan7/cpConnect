@@ -89,7 +89,6 @@
 		35A0892517F8F1D700430BE0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0891E17F8F1D700430BE0 /* Default.png */; };
 		35A0892617F8F1D700430BE0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0891F17F8F1D700430BE0 /* Default@2x.png */; };
 		35A0892717F8F1D700430BE0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0892017F8F1D700430BE0 /* Default-568h@2x.png */; };
-		35A0892A17F8F25000430BE0 /* MVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A0892917F8F25000430BE0 /* MVViewController.m */; };
 		35A0892C17F8F27300430BE0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0892B17F8F27300430BE0 /* CoreMedia.framework */; };
 		35A0892E17F8F27D00430BE0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A0892D17F8F27D00430BE0 /* MediaPlayer.framework */; };
 		35A0893617F9156700430BE0 /* Default_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893417F9156700430BE0 /* Default_@2X.png */; };
@@ -208,8 +207,6 @@
 		35A0891E17F8F1D700430BE0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		35A0891F17F8F1D700430BE0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		35A0892017F8F1D700430BE0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		35A0892817F8F25000430BE0 /* MVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVViewController.h; sourceTree = "<group>"; };
-		35A0892917F8F25000430BE0 /* MVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVViewController.m; sourceTree = "<group>"; };
 		35A0892B17F8F27300430BE0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		35A0892D17F8F27D00430BE0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		35A0893417F9156700430BE0 /* Default_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_@2X.png"; sourceTree = "<group>"; };
@@ -373,8 +370,6 @@
 				35EF0D5218A1C39A001F966D /* values3.html */,
 				EAEF5F8917FD120E0077C160 /* giving.html */,
 				35C521AF18E3BA2B00A101FF /* test.html */,
-				35A0892817F8F25000430BE0 /* MVViewController.h */,
-				35A0892917F8F25000430BE0 /* MVViewController.m */,
 				3540FE4417EA58C1002C84AC /* Images.xcassets */,
 				3540FE3317EA58C1002C84AC /* Supporting Files */,
 			);
@@ -602,7 +597,6 @@
 				3540FE3917EA58C1002C84AC /* main.m in Sources */,
 				3540FE3D17EA58C1002C84AC /* cpcAppDelegate.m in Sources */,
 				35A088E117F2865100430BE0 /* BeliefsUIViewController.m in Sources */,
-				35A0892A17F8F25000430BE0 /* MVViewController.m in Sources */,
 				35A088F917F3468100430BE0 /* AboutTableViewController.m in Sources */,
 				35A088D817F253B400430BE0 /* cpcCastDetailViewController.m in Sources */,
 				35A0891917F62FC100430BE0 /* EmailViewController.m in Sources */,
