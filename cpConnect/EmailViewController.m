@@ -73,7 +73,7 @@
 {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return 6;
 }
 
 //- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath

@@ -127,8 +127,39 @@
                                             </fragment>
                                         </attributedString>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AboutUs" textLabel="DzR-Rf-mAD" style="IBUITableViewCellStyleDefault" id="tb5-AZ-8Ev" userLabel="AboutUs">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Invite" textLabel="IDi-aM-Vef" style="IBUITableViewCellStyleDefault" id="DIs-9k-ieP" userLabel="AboutUs">
                                         <rect key="frame" x="0.0" y="211" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DIs-9k-ieP" id="XHf-WQ-LaI">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Invite Someone to CPC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IDi-aM-Vef">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES"/>
+                                        </accessibility>
+                                        <attributedString key="userComments">
+                                            <fragment content="AboutUs">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="toolTip"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <connections>
+                                            <segue destination="c86-zE-GZw" kind="push" id="Qzy-qh-LuA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="AboutUs" textLabel="DzR-Rf-mAD" style="IBUITableViewCellStyleDefault" id="tb5-AZ-8Ev" userLabel="AboutUs">
+                                        <rect key="frame" x="0.0" y="255" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tb5-AZ-8Ev" id="hHd-HB-oIP">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -378,6 +409,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHM-wo-gYK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1373" y="-231"/>
+        </scene>
+        <!--InviteUI View Controller - Invite Someone-->
+        <scene sceneID="DeU-Ce-d10">
+            <objects>
+                <viewController id="c86-zE-GZw" customClass="InviteUIViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a4P-hL-BTa">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" restorationIdentifier="webView" id="g6Q-1G-NWZ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="c86-zE-GZw" id="r0v-kP-RXu"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" restorationIdentifier="aIndicator" hidesWhenStopped="YES" style="whiteLarge" id="gL3-29-LtI">
+                                <rect key="frame" x="142" y="72" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Invite Someone" id="WPZ-lB-Fyf"/>
+                    <connections>
+                        <outlet property="aIndicator" destination="gL3-29-LtI" id="n4L-sB-7Wy"/>
+                        <outlet property="webView" destination="g6Q-1G-NWZ" id="3q5-ai-A8I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UlQ-Gz-67T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="424"/>
         </scene>
         <!--About Table View Controller - About CPC-->
         <scene sceneID="fAO-jX-8rb">

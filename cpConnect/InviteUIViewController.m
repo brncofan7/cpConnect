@@ -1,34 +1,35 @@
 //
-//  EventsUIViewController.m
+//  InviteUIViewController.m
 //  cpConnect
 //
-//  Created by Daniel Wright on 9/26/13.
-//  Copyright (c) 2013 Center Point Church. All rights reserved.
+//  Created by Daniel Wright on 3/26/14.
+//  Copyright (c) 2014 Center Point Church. All rights reserved.
 //
 
-#import "EventsUIViewController.h"
+#import "InviteUIViewController.h"
 
-@interface EventsUIViewController ()
+@interface InviteUIViewController ()
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 
-@implementation EventsUIViewController
-@synthesize  activityIndicator;
+@implementation InviteUIViewController
+
+@synthesize activityIndicator;
+
 
 - (void)viewDidLoad
 {
-    //NSString *fullURL = @"http://www.centerpointmeridian.com/calendar/";
+    //NSString *fullURL = @"http://www.centerpointmeridian.com/giving/";
     //NSURL *url = [NSURL URLWithString:fullURL];
     //NSURLRequest *Request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
     //[_webView loadRequest:Request];
     
-    //NEW CODE 2-4-2014
-    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"events" ofType:@"html"];
+    //NEW CODE 3-26-2014
+    NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"invite" ofType:@"html"];
     NSString* htmlString = [NSString stringWithContentsOfFile:htmlFile encoding:NSUTF8StringEncoding error:nil];
     [_webView loadHTMLString:htmlString baseURL:nil];
-    //END NEW CODE 2-4-2014
-    
+    //END NEW CODE 3-26-2014
     
     activityIndicator = [[UIActivityIndicatorView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
     activityIndicator.color = [UIColor whiteColor];
@@ -37,8 +38,9 @@
     [self navigationItem].rightBarButtonItem = barButton;
     
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
 }
+
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
@@ -50,7 +52,6 @@
 {
     [activityIndicator stopAnimating];
     //[_aIndicator stopAnimating];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +69,4 @@
     _webView.delegate = nil; _webView = nil;
     //[self.webView loadHTMLString:@"<html></html>" baseURL:nil];
 }
-
-
 @end

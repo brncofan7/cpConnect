@@ -95,8 +95,9 @@
 		35A0893717F9156700430BE0 /* Default-568h_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893517F9156700430BE0 /* Default-568h_@2X.png */; };
 		35A0893A17F916C000430BE0 /* Default_4@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893817F916C000430BE0 /* Default_4@2X.png */; };
 		35A0893B17F916C000430BE0 /* Default_5@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A0893917F916C000430BE0 /* Default_5@2X.png */; };
+		35BB745E18E3DDCF00ACB9CA /* InviteUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BB745D18E3DDCF00ACB9CA /* InviteUIViewController.m */; };
 		35C521AE18E3B92200A101FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35C521AD18E3B92200A101FF /* Parse.framework */; };
-		35C521B018E3BA2B00A101FF /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 35C521AF18E3BA2B00A101FF /* test.html */; };
+		35C521B018E3BA2B00A101FF /* invite.html in Resources */ = {isa = PBXBuildFile; fileRef = 35C521AF18E3BA2B00A101FF /* invite.html */; };
 		35EF0D4F18A1BB8A001F966D /* values2.html in Resources */ = {isa = PBXBuildFile; fileRef = 35EF0D4E18A1BB8A001F966D /* values2.html */; };
 		35EF0D5118A1BCED001F966D /* logosmallweb.png in Resources */ = {isa = PBXBuildFile; fileRef = 35EF0D5018A1BCED001F966D /* logosmallweb.png */; };
 		35EF0D5318A1C39A001F966D /* values3.html in Resources */ = {isa = PBXBuildFile; fileRef = 35EF0D5218A1C39A001F966D /* values3.html */; };
@@ -213,8 +214,10 @@
 		35A0893517F9156700430BE0 /* Default-568h_@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h_@2X.png"; sourceTree = "<group>"; };
 		35A0893817F916C000430BE0 /* Default_4@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_4@2X.png"; sourceTree = "<group>"; };
 		35A0893917F916C000430BE0 /* Default_5@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default_5@2X.png"; sourceTree = "<group>"; };
+		35BB745C18E3DDCF00ACB9CA /* InviteUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InviteUIViewController.h; sourceTree = "<group>"; };
+		35BB745D18E3DDCF00ACB9CA /* InviteUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InviteUIViewController.m; sourceTree = "<group>"; };
 		35C521AD18E3B92200A101FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		35C521AF18E3BA2B00A101FF /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		35C521AF18E3BA2B00A101FF /* invite.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = invite.html; sourceTree = "<group>"; };
 		35EF0D4E18A1BB8A001F966D /* values2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = values2.html; sourceTree = "<group>"; };
 		35EF0D5018A1BCED001F966D /* logosmallweb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logosmallweb.png; sourceTree = "<group>"; };
 		35EF0D5218A1C39A001F966D /* values3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = values3.html; sourceTree = "<group>"; };
@@ -339,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				35C521AD18E3B92200A101FF /* Parse.framework */,
-				35EF0D5418A1C760001F966D /* iPad */,
 				35A088F617F3457E00430BE0 /* images */,
 				3540FE3E17EA58C1002C84AC /* Main.storyboard */,
 				35A088F717F3468100430BE0 /* AboutTableViewController.h */,
@@ -360,6 +362,8 @@
 				35A0891017F5092C00430BE0 /* EventsUIViewController.m */,
 				3540FE6417EA7EFC002C84AC /* GivingUIViewController.h */,
 				3540FE6517EA7EFC002C84AC /* GivingUIViewController.m */,
+				35BB745C18E3DDCF00ACB9CA /* InviteUIViewController.h */,
+				35BB745D18E3DDCF00ACB9CA /* InviteUIViewController.m */,
 				35A088E217F2865F00430BE0 /* ValuesUIViewController.h */,
 				35A088E317F2865F00430BE0 /* ValuesUIViewController.m */,
 				35A088DD17F285E300430BE0 /* beliefs.html */,
@@ -369,7 +373,7 @@
 				35EF0D4E18A1BB8A001F966D /* values2.html */,
 				35EF0D5218A1C39A001F966D /* values3.html */,
 				EAEF5F8917FD120E0077C160 /* giving.html */,
-				35C521AF18E3BA2B00A101FF /* test.html */,
+				35C521AF18E3BA2B00A101FF /* invite.html */,
 				3540FE4417EA58C1002C84AC /* Images.xcassets */,
 				3540FE3317EA58C1002C84AC /* Supporting Files */,
 			);
@@ -444,13 +448,6 @@
 				35A088EE17F3425000430BE0 /* table_background.jpg */,
 			);
 			name = images;
-			sourceTree = "<group>";
-		};
-		35EF0D5418A1C760001F966D /* iPad */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,7 +570,7 @@
 				3556043F18048F3800C64378 /* 4B_320-480-1.png in Resources */,
 				35EF0D4F18A1BB8A001F966D /* values2.html in Resources */,
 				353444F61808DE1500C52247 /* Icon-72.png in Resources */,
-				35C521B018E3BA2B00A101FF /* test.html in Resources */,
+				35C521B018E3BA2B00A101FF /* invite.html in Resources */,
 				3540FE4017EA58C1002C84AC /* Main.storyboard in Resources */,
 				35A0890C17F4BDF200430BE0 /* play2_32.png in Resources */,
 				35A0892517F8F1D700430BE0 /* Default.png in Resources */,
@@ -597,6 +594,7 @@
 				3540FE3917EA58C1002C84AC /* main.m in Sources */,
 				3540FE3D17EA58C1002C84AC /* cpcAppDelegate.m in Sources */,
 				35A088E117F2865100430BE0 /* BeliefsUIViewController.m in Sources */,
+				35BB745E18E3DDCF00ACB9CA /* InviteUIViewController.m in Sources */,
 				35A088F917F3468100430BE0 /* AboutTableViewController.m in Sources */,
 				35A088D817F253B400430BE0 /* cpcCastDetailViewController.m in Sources */,
 				35A0891917F62FC100430BE0 /* EmailViewController.m in Sources */,
@@ -732,7 +730,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "864971D3-9762-4161-8337-9EAC326A6C86";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -744,8 +742,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = cpConnect_AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/danielwwright/Documents/cpConnect,
@@ -760,7 +758,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "864971D3-9762-4161-8337-9EAC326A6C86";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
